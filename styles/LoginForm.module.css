@@ -1,0 +1,177 @@
+.global {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.mainContent {
+    text-align: center;
+}
+
+.loginBtn {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #0000ff;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.loginModal {
+    z-index: 1002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    
+    box-shadow:
+        black 12px -12px,
+        BLUE -1px 1px,
+        BLUE -2px 2px,
+        BLUE -3px 3px,
+        BLUE -1.5px 1.5px,
+        BLUE -2.5px 2.5px,
+        BLUE -0.5px 0.5px,
+        CYAN -4px 4px,
+        CYAN -5px 5px,
+        CYAN -6px 6px,
+        CYAN -4.5px 4.5px,
+        CYAN -5.5px 5.5px,
+        CYAN -3.5px 3.5px;
+}
+
+.loginForm h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'roboto';
+}
+
+.loginForm h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Arial';
+    color: rgba(1, 1, 1);
+}
+
+
+
+.loginForm form {
+    display: grid;
+    gap: 10px;
+}
+
+.loginForm label {
+    font-size: 1.5rem;
+}
+
+.loginForm input {
+    height: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.loginForm input:focus::-webkit-textfield-decoration-container {
+    pointer-events: none;
+}
+
+.loginForm input:invalid {
+    border-color: blue;
+    color: blue;
+}
+
+.loginForm input:required:valid {
+    border-color: black;
+    color: black;
+}
+
+.loginForm input:focus:invalid,
+.loginForm textarea:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: blue 1.5px 1.5px 0px 0px;
+}
+
+.loginForm input:focus:valid,
+.loginForm textarea:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: black 1.5px 1.5px 0px 0px;
+}
+
+.loginForm button[type='submit'] {
+    position: relative;
+    margin-top: 12px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 3rem;
+    border: solid blue 1px;
+    color: blue;
+}
+
+.loginForm button[type='submit']:hover {
+    background-color: blue;
+    border: solid blue 1px;
+    color: white;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d8d8d8;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
