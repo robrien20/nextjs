@@ -38,18 +38,17 @@
 }
 
 .loginModal {
-    z-index: 1002;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    /* Add this line */
     justify-content: center;
     align-items: center;
+    z-index: 1002;
 }
 
 .loginForm {
@@ -60,7 +59,6 @@
     width: 90%;
     
     box-shadow:
-        black 12px -12px,
         BLUE -1px 1px,
         BLUE -2px 2px,
         BLUE -3px 3px,
@@ -79,9 +77,14 @@
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
     font-style: italic;
     font-family: 'roboto';
+}
+
+.label {
+    font-family: 'roboto';
+    text-align: left;
 }
 
 .loginForm h1 {
@@ -92,6 +95,11 @@
     font-style: italic;
     font-family: 'Arial';
     color: rgba(1, 1, 1);
+    text-shadow:
+            0 0.25rem 0 #0c2ffb,
+            0.1rem 0.5rem 0 #2cfcfd,
+            0 -0.25rem 0 red,
+            0 -0.5rem 0 #fefc4b;
 }
 
 
