@@ -1,4 +1,17 @@
-:root {
+:root{
+      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-app-region: no-drag;
+        cursor: default;
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +117,48 @@ a {
   html {
     color-scheme: dark;
   }
+} */
+
+/* styles/global.css */
+/* button,
+.dropdown-menu,
+a {
+  font-family: Arial;
+  font-size: 1.3rem;
 }
+
+button {
+  border: none;
+  background-color: white;
+  display: block;
+  height: auto;
+  width: 10.4rem;
+  padding: 7.8px 10.4px;
+  margin: 0;
+  text-align: left;
+  color: black;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+a {
+  color: blue;
+  padding: 7.8px 10.4px;
+  text-decoration: underline;
+  display: block;
+}
+
+a:link,
+a:visited {
+  color: blue;
+}
+
+a:hover,
+a:visited:hover {
+  background-color: blue;
+  color: white;
+}
+ */
