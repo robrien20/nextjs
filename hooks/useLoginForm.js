@@ -6,7 +6,6 @@ const useLoginForm = () => {
   const openLoginForm = () => {
     setShowModal(true);
   };
-
   const closeLoginForm = () => {
     setShowModal(false);
   };
