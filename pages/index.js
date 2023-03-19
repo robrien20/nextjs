@@ -5,30 +5,6 @@ const Home = () => {
   return (
     
     <Layout>
-      scalea
-      about
-      abouta
-      wdq
-      qwd
-
-      qwd
-      qwdqw
-      dqw
-
-      qwdqwqdwd
-      qwdqwqdwddqw
-      dqw
-      dqwwdq
-
-      about
-      <br />
-      qwdqwpidn
-      wdqln
-      <br />
-      qwdknlqwnk
-      <br />lqkdnqwndlqdw
-      <br />;jqdq;kmwd qwdknlqwnk
-      <br />q;wdfnq;wmdolqwl
     </Layout>
   );
 };

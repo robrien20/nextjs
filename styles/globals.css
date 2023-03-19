@@ -2,13 +2,17 @@
       box-sizing: border-box;
         margin: 0;
         padding: 0;
-        -webkit-user-select: none;
+        /* -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
         -webkit-user-drag: none;
         -webkit-app-region: no-drag;
-        cursor: default;
+        cursor: default; */
+}
+
+button{ 
+  cursor: pointer;
 }
 
 /* :root {
