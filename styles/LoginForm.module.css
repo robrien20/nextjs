@@ -50,16 +50,17 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.95);
     display: flex;
-    /* Add this line */
     justify-content: center;
     align-items: center;
     z-index: 1002;
+        overflow: scroll;
 }
 
 .loginForm {
     background-color: #fff;
     padding: 40px;
-    
+align-self: flex-start;
+margin: 50px;    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 70vw;
     max-width: 400px;
@@ -184,4 +185,28 @@
 
 .closeBtn:hover {
     color: #333;
+}
+
+.switchButton {
+    /* Add styling for switch buttons */
+        background-color: white;
+            color: blue;
+            border:none;
+            padding: 7.8px 10.4px;
+ font-size: 1.3rem;
+ /* TOGGLE SWITCH HAS A SOLID BLUE BORDER */
+    border: solid BLUE 1px;
+}
+
+
+.switchButton:hover {
+    /* Add styling for switch buttons */
+        border: solid BLUE 1px;
+}
+
+.active {
+    /* Add styling for the active button */
+background-color: blue;
+    color: white;
+
 }
