@@ -26,10 +26,15 @@
 
 .loginBtn {
     font-size: 1.3rem;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #0000ff;
+    height: auto;
+    padding: 7.8px 10.4px;
+    border: none;
+    background-color: white;
     cursor: pointer;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 .loginBtn:hover {
@@ -54,23 +59,23 @@
 .loginForm {
     background-color: #fff;
     padding: 40px;
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
     max-width: 400px;
-    width: 90%;
+    
+    /* max-width: 100px; */
     
     box-shadow:
-        BLUE -1px 1px,
-        BLUE -2px 2px,
-        BLUE -3px 3px,
-        BLUE -1.5px 1.5px,
-        BLUE -2.5px 2.5px,
-        BLUE -0.5px 0.5px,
-        CYAN -4px 4px,
-        CYAN -5px 5px,
-        CYAN -6px 6px,
-        CYAN -4.5px 4.5px,
-        CYAN -5.5px 5.5px,
-        CYAN -3.5px 3.5px;
+        BLUE -0.1vw 0.1vw,
+            BLUE -0.2vw 0.2vw,
+            BLUE -0.3vw 0.3vw,
+            /* BLUE -1.5px 1.5px, */
+            /* BLUE -2.5px 2.5px, */
+            /* BLUE -0.5px 0.5px, */
+            CYAN -0.4vw 0.4vw,
+            CYAN -0.5vw 0.5vw,
+            CYAN -0.6vw 0.6vw;
 }
 
 .loginForm h2 {
@@ -79,11 +84,11 @@
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: 'roboto';
+    font-family: 'didot';
 }
 
 .label {
-    font-family: 'roboto';
+    font-family: 'arial';
     text-align: left;
 }
 
@@ -93,15 +98,14 @@
     text-align: center;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Arial';
-    color: rgba(1, 1, 1);
+    font-family: 'arial';
+    color: black;
     text-shadow:
-            0 0.25rem 0 #0c2ffb,
-            0.1rem 0.5rem 0 #2cfcfd,
+            0 0.25rem 0 blue,
+            0 0.5rem 0 cyan,
             0 -0.25rem 0 red,
-            0 -0.5rem 0 #fefc4b;
+            0 -0.5rem 0 yellow;
 }
-
 
 
 .loginForm form {
@@ -170,13 +174,11 @@
 }
 
 .closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+
+    position: static;
     font-size: 1.2rem;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     color: #d8d8d8;
 }
 
