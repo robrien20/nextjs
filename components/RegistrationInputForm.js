@@ -1,8 +1,8 @@
-// components/LoginInputForm.js
+// components/RegistrationInputForm.js
 import React from "react";
 import styles from "../styles/LoginForm.module.css";
 
-const LoginInputForm = ({ username, onUsernameChange }) => {
+const RegistrationInputForm = ({ username, onUsernameChange }) => {
   return (
     <form className={styles.form}>
       <label className={styles.label} htmlFor="username">
@@ -17,6 +17,16 @@ const LoginInputForm = ({ username, onUsernameChange }) => {
         onChange={onUsernameChange}
         required
       />
+      <label className={styles.label} htmlFor="email">
+        Email:
+      </label>
+      <input
+        className={styles.input}
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
       <label className={styles.label} htmlFor="password">
         Password:
       </label>
@@ -27,11 +37,21 @@ const LoginInputForm = ({ username, onUsernameChange }) => {
         name="password"
         required
       />
+      <label className={styles.label} htmlFor="verifyPassword">
+        Verify Password:
+      </label>
+      <input
+        className={styles.input}
+        type="password"
+        id="verifyPassword"
+        name="verifyPassword"
+        required
+      />
       <button className={styles.submitButton} type="submit">
-        Log In
+        Register
       </button>
     </form>
   );
 };
 
-export default LoginInputForm;
+export default RegistrationInputForm;
