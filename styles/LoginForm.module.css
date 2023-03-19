@@ -1,0 +1,212 @@
+.global {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.mainContent {
+    text-align: center;
+}
+
+.loginBtn {
+    font-size: 1.3rem;
+    height: auto;
+    padding: 7.8px 10.4px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.loginBtn:hover {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.loginModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+        overflow: scroll;
+}
+
+.loginForm {
+    background-color: #fff;
+    padding: 40px;
+align-self: flex-start;
+margin: 50px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+    max-width: 400px;
+    
+    /* max-width: 100px; */
+    
+    box-shadow:
+        BLUE -0.1vw 0.1vw,
+            BLUE -0.2vw 0.2vw,
+            BLUE -0.3vw 0.3vw,
+            /* BLUE -1.5px 1.5px, */
+            /* BLUE -2.5px 2.5px, */
+            /* BLUE -0.5px 0.5px, */
+            CYAN -0.4vw 0.4vw,
+            CYAN -0.5vw 0.5vw,
+            CYAN -0.6vw 0.6vw;
+}
+
+.loginForm h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'didot';
+}
+
+.label {
+    font-family: 'arial';
+    text-align: left;
+}
+
+.loginForm h1 {
+    font-size: 8rem;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'arial';
+    color: black;
+    text-shadow:
+            0 0.25rem 0 blue,
+            0 0.5rem 0 cyan,
+            0 -0.25rem 0 red,
+            0 -0.5rem 0 yellow;
+}
+
+
+.loginForm form {
+    display: grid;
+    gap: 10px;
+}
+
+.loginForm label {
+    font-size: 1.5rem;
+}
+
+.loginForm input {
+    height: auto;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.loginForm input:focus::-webkit-textfield-decoration-container {
+    pointer-events: none;
+}
+
+.loginForm input:invalid {
+    border-color: blue;
+    color: blue;
+}
+
+.loginForm input:required:valid {
+    border-color: black;
+    color: black;
+}
+
+.loginForm input:focus:invalid,
+.loginForm textarea:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: blue 1.5px 1.5px 0px 0px;
+}
+
+.loginForm input:focus:valid,
+.loginForm textarea:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: black 1.5px 1.5px 0px 0px;
+}
+
+.loginForm button[type='submit'] {
+    position: relative;
+    margin-top: 12px;
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 3rem;
+    border: solid blue 1px;
+    color: blue;
+}
+
+.loginForm button[type='submit']:hover {
+    background-color: blue;
+    border: solid blue 1px;
+    color: white;
+}
+
+.closeBtn {
+
+    position: static;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #d8d8d8;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+.switchButton {
+    /* Add styling for switch buttons */
+        background-color: white;
+            color: blue;
+            border:none;
+            padding: 7.8px 10.4px;
+ font-size: 1.3rem;
+ /* TOGGLE SWITCH HAS A SOLID BLUE BORDER */
+    border: solid BLUE 1px;
+}
+
+
+.switchButton:hover {
+    /* Add styling for switch buttons */
+        border: solid BLUE 1px;
+}
+
+.active {
+    /* Add styling for the active button */
+background-color: blue;
+    color: white;
+
+}
