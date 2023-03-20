@@ -70,24 +70,24 @@ const MenuItem = ({ item, closeOtherSubmenus, isActive }) => {
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null);
-    
-      const [scrollPos, setScrollPos] = useState(0);
+  const menuRef = useRef(null);
 
-      const scrollMenuLeft = () => {
-        const newScrollPos = Math.max(scrollPos - 100, 0);
-        setScrollPos(newScrollPos);
-        menuRef.current.scrollLeft = newScrollPos;
-      };
+  const [scrollPos, setScrollPos] = useState(0);
 
-      const scrollMenuRight = () => {
-        const newScrollPos = Math.min(
-          scrollPos + 100,
-          menuRef.current.scrollWidth - menuRef.current.clientWidth
-        );
-        setScrollPos(newScrollPos);
-        menuRef.current.scrollLeft = newScrollPos;
-      };
+  const scrollMenuLeft = () => {
+    const newScrollPos = Math.max(scrollPos - 100, 0);
+    setScrollPos(newScrollPos);
+    menuRef.current.scrollLeft = newScrollPos;
+  };
+
+  const scrollMenuRight = () => {
+    const newScrollPos = Math.min(
+      scrollPos + 100,
+      menuRef.current.scrollWidth - menuRef.current.clientWidth
+    );
+    setScrollPos(newScrollPos);
+    menuRef.current.scrollLeft = newScrollPos;
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -111,7 +111,10 @@ const Menu = () => {
 
   return (
     <div className={styles.menu} ref={menuRef}>
-      <button className={styles.menuButton} onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className={`${styles.menuButton} ${isOpen && styles.menuButtonActive}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         Menu
       </button>
       {isOpen && (

@@ -7,6 +7,42 @@ const menuConfig = {
       url: "/",
     },
     {
+      type: "linkButton",
+      label: "About",
+      url: "/about",
+    },
+    {
+      type: "subMenuButton",
+      label: "Socials",
+      items: [
+        {
+          type: "linkButton",
+          label: "Instagram",
+          url: "https://www.instagram.com/robrien.xyz/",
+        },
+        {
+          type: "linkButton",
+          label: "Twitter",
+          url: "https://www.twitter.com/rob_obr",
+        },
+        {
+          type: "linkButton",
+          label: "LinkedIn",
+          url: "https://www.linkedin.com/in/r-obrien/",
+        },
+        {
+          type: "linkButton",
+          label: "TikTok",
+          url: "https://www.tiktok.com/@rob.obrien/",
+        },
+        {
+          type: "linkButton",
+          label: "Email",
+          url: "mailto:robert@robrien.xyz?subject=Hello%20Robert&body=Hello%20Robert%2C%0A%20%0A",
+        },
+      ],
+    },
+    {
       type: "subMenuButton",
       label: "Projects",
       items: [
