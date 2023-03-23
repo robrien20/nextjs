@@ -1,10 +1,11 @@
+// / components/Layout.js
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Menu from "./Menu";
 import LoginForm from "./LoginForm";
 
 const Layout = ({ children }) => {
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState(null);
   const [location, setLocation] = useState("");
   const asciiGalleryRef = useRef(null);
 
@@ -52,9 +53,13 @@ const Layout = ({ children }) => {
     <>
       <h1>My Website</h1>
       <p>My Website is awesome!</p>
-      <p>Current time: {time.toLocaleTimeString()}</p>
-      <p>Current date: {time.toLocaleDateString()}</p>
-      <p>Current date and time: {time.toLocaleString()}</p>
+      {time && (
+        <>
+          <p>Current time: {time.toLocaleTimeString()}</p>
+          <p>Current date: {time.toLocaleDateString()}</p>
+          <p>Current date and time: {time.toLocaleString()}</p>
+        </>
+      )}
       <p>Current location: {location}</p>
       <Menu />
       <LoginForm />
