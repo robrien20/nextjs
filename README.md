@@ -1,38 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Website built with Next.js
 
-## Getting Started
 
-First, run the development server:
+## Technologies
+- next.js
+- react.js
+- css
+- markdown
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## structure
+- /pages contains the navigable pages of my website
+- /components contains all of the components used in /pages including the menu, login window, markdown reader 
+- /config contains config files, ie the structure of the site's navigation menu is defined in menuConfig.js, and turned into a navigable menu in /components/menu.js
+- /styles contains stylesheets for modules. Ideally all components are formatted such that when scrapped together no additional page styling is needed
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## To do
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[ ] Integrate an actual login auth provider instead of dummy form
+[ ] Write more articles that utilize the markdown reader 
+[ ] Make the markdown reader look better by adding adaptive scrolling
+[ ] Come up with a system for cloud image storage, either s3 or some google cloud service
+[ ] Create an "albums" component that takes a json or js config file of album contents and captions and turns it into an album 
+[ ] Add an "html block" into the markdown reader, such that a .md file can contain html that gets executed on the page. or like add iframes to it or something
+[ ] Write a real about page in md that describes me, my experience, the purpose of this site, etc
+[ ] Create pages that are accesible to logged in users only
+[ ] Create a messageboard that 
+[ ] Require sms login and use endato to get info on the user - users with non verified numbers will have fewer permissions.
+[ ] Build some threejs visuals to scatter around the website as components to fill whitespace
