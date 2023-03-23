@@ -15,14 +15,14 @@
 
 ## To do
 
-[ ] Integrate an actual login auth provider instead of dummy form
-[ ] Write more articles that utilize the markdown reader 
-[ ] Make the markdown reader look better by adding adaptive scrolling
-[ ] Come up with a system for cloud image storage, either s3 or some google cloud service
-[ ] Create an "albums" component that takes a json or js config file of album contents and captions and turns it into an album 
-[ ] Add an "html block" into the markdown reader, such that a .md file can contain html that gets executed on the page. or like add iframes to it or something
-[ ] Write a real about page in md that describes me, my experience, the purpose of this site, etc
-[ ] Create pages that are accesible to logged in users only
-[ ] Create a messageboard that 
-[ ] Require sms login and use endato to get info on the user - users with non verified numbers will have fewer permissions.
-[ ] Build some threejs visuals to scatter around the website as components to fill whitespace
+-[ ] Integrate an actual login auth provider instead of dummy form
+-[ ] Write more articles that utilize the markdown reader 
+-[ ] Make the markdown reader look better by adding adaptive scrolling
+-[ ] Come up with a system for cloud image storage, either s3 or some google cloud service
+-[ ] Create an "albums" component that takes a json or js config file of album contents and captions and turns it into an album 
+-[ ] Add an "html block" into the markdown reader, such that a .md file can contain html that gets executed on the page. or like add iframes to it or something
+-[ ] Write a real about page in md that describes me, my experience, the purpose of this site, etc
+-[ ] Create pages that are accesible to logged in users only
+-[ ] Create a messageboard that 
+-[ ] Require sms login and use endato to get info on the user - users with non verified numbers will have fewer permissions.
+-[ ] Build some threejs visuals to scatter around the website as components to fill whitespace
