@@ -15,6 +15,7 @@
 
 ## To do
 
+- [x] build skeleton
 - [ ] Integrate an actual login auth provider instead of dummy form
 - [ ] Write more articles that utilize the markdown reader 
 - [ ] Make the markdown reader look better by adding adaptive scrolling
