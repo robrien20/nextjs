@@ -16,6 +16,7 @@ const LoginForm = () => {
 
   const handleRegisterClick = () => {
     setShowRegisterForm(true);
+    setUsername("Not accepting new users...");
   };
 
   const handleLoginClick = () => {
