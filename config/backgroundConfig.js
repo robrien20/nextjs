@@ -1,6 +1,6 @@
 // config/backgroundConfig.js
 export const images = [
-  "https://s3.amazonaws.com/robrien.xyz/stochaster/train.png",
+    "https://s3.amazonaws.com/robrien.xyz/stochaster/train.png",
     "https://s3.amazonaws.com/robrien.xyz/stochaster/amsterdam+bike+2.png",
     "https://s3.amazonaws.com/robrien.xyz/stochaster/boat.png",
     "https://s3.amazonaws.com/robrien.xyz/stochaster/brooklynBridge.png",
