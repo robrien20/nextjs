@@ -1,9 +1,13 @@
 /* styles/About.module.css */
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    max-width: 80%;
+    width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    position: relative;
+    top: 4rem;
 }
 
 .title {
@@ -22,11 +26,13 @@
 }
 
 @media (max-width: 768px) {
-    .title {
+    .container {
+    }
+    /* .title {
         font-size: 1rem;
     }
 
     .paragraph {
         font-size: 0.8rem;
-    }
+    } */
 }

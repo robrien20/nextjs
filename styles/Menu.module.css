@@ -20,17 +20,10 @@
 }
 
 .menuButton {
-    border: none;
-    background-color: white;
+    composes: globalButton from '../styles/buttons.css';
     display: block;
-    height: auto;
-    width: 10.4rem;
-    padding: 7.8px 10.4px;
     text-align: left;
-    color: black;
-    line-height: 1;
 }
-
 
 .menuLink {
     background-color: white;
@@ -54,16 +47,19 @@
 .dropdown-menu,
 .submenu {
     position: absolute;
-    min-width: 10.4rem;
+    /* min-width: 10.4rem; */
     left: 100%;
     top: 0;
+    
 }
 
 .menuItem {
+    
     list-style-type: none;
     position: relative;
     margin: 0;
     padding: 0;
+
 }
 
 .dropdown-menu,
@@ -80,77 +76,21 @@
     border-color: blue;
     color: white;
     /* font-weight: bold; */
-    /* font-style: italic; */
+    font-style: italic;
     /* text-decoration: underline; */
 }
 
 /* Add this at the bottom of Menu.module.css */
 
 @media (max-width: 768px) {
-
-    .menuButton,
     .menuLink {
-        font-size: 1.4rem;
         padding: 6px 8px;
     }
 }
-
-@media (max-width: 768px) {
-    .submenu {
-        min-width: 8rem;
-    }
-}
-
-/* // touch screen only */
-@media (pointer: coarse) {
-    .menuButton:hover {
-
-        }
-}
-
 /* // computer only */
 @media (pointer: fine) {
     .menuButton:hover {
         background-color: blue;
         color: white;
-    }
-}
-/* Add this at the bottom of Menu.module.css */
-@media (max-width: 768px) {
-
-    .menuButton,
-    .menuLink {
-        padding: 5px 8px;
-        width: 8rem;
-    }
-}
-
-.arrowLeft,
-.arrowRight {
-    display: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    font-size: 1.5rem;
-    padding: 5px 10px;
-    z-index: 1001;
-    /* Ensure the arrows are above the menu items */
-}
-
-.arrowLeft {
-    left: 0;
-}
-
-.arrowRight {
-    right: 0;
-}
-
-@media (max-width: 768px) {
-
-    .arrowLeft,
-    .arrowRight {
-        display: block;
     }
 }

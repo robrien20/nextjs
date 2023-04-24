@@ -1,0 +1,39 @@
+/* styles/buttons.css */
+.globalButton {
+    font-family: Arial;
+    font-size: 1.3rem;
+    border: none;
+    background-color: white;
+    height: auto;
+    padding: 7.8px 10.4px;
+    color: black;
+    line-height: 1;
+    cursor: pointer;
+    width: 10.4rem;
+    z-index: 1002;
+    margin: 0px;
+}
+
+.globalButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .globalButton {
+        padding: 6px 8px;
+        width: 8rem;
+    }
+}
+
+/* .menuButton {
+    border: none;
+    background-color: white;
+    display: block;
+    height: auto;
+    width: 10.4rem;
+    padding: 7.8px 10.4px;
+    text-align: left;
+    color: black;
+    line-height: 1;
+} */

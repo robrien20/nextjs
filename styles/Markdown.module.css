@@ -1,0 +1,98 @@
+.markdown {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: black;
+    position: relative;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.markdown h1 {
+    font-size: 2em;
+}
+
+.markdown h2 {
+    font-size: 1.5em;
+}
+
+.markdown h3 {
+    font-size: 1.25em;
+}
+
+.markdown h4 {
+    font-size: 1em;
+}
+
+.markdown h5 {
+    font-size: 0.875em;
+}
+
+.markdown h6 {
+    font-size: 0.85em;
+}
+
+.markdown p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.markdown a:hover {
+    text-decoration: underline;
+}
+
+.markdown img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+}
+
+.markdown code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    /* font-size: 85%; */
+    /* background-color: rgba(27, 31, 35, 0.05); */
+    color: lightgray;
+}
+
+.markdown pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.markdown blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+}
+
+.stickyContainer {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.header {
+    margin: 0;
+}

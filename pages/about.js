@@ -6,23 +6,26 @@ import styles from "../styles/About.module.css";
 const About = () => (
   <Layout>
     <div className={styles.container}>
-      <h2 className={styles.title}>About Us</h2>
+      <h2 className={styles.title}>About</h2>
       <p className={styles.paragraph}>
-        We are a company that provides the best services and products for our
-        customers. Our goal is to deliver exceptional value, exceed
-        expectations, and maintain the highest standards of quality and
-        integrity.
+        I am a back end developer at Goldman Sachs. I studied Computer
+        Science at Columbia University.
       </p>
       <p className={styles.paragraph}>
-        Our team consists of industry experts with years of experience in their
-        respective fields. We are committed to continuous improvement and
-        innovation, and we strive to create a positive impact in our community
-        and beyond.
+        I am constantly pursuing personal creative projects. While social media
+        is great for sharing these projects, I wanted to build my own platform
+        that I have complete control over.
       </p>
       <p className={styles.paragraph}>
-        Thank you for visiting our website, and please feel free to contact us
-        with any questions or feedback you may have. We look forward to serving
-        you and helping you achieve your goals.
+        So thats why I made this website. It's place for me to test ideas,
+        showcase things I've worked on, be creative, etc etc. Beyond coding, I
+        love experimenting with graphic design and photography, unique and
+        original user experiences. There are some websites that just feel like
+        they are worth exploring, and thats what I am attempting to do here. So
+        please, explore and enjoy.
+      </p>
+      <p className={styles.paragraph} style={{ textIndent: "10%" }}>
+        - Robert
       </p>
     </div>
   </Layout>
