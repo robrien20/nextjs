@@ -1,0 +1,31 @@
+.messageContainer {
+  position: fixed;
+  bottom: 0; /* Change this from 'top' to 'bottom' to display the message at the bottom */
+  left: 0;
+  right: 0;
+  height: auto;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: rgb(255,255,255,1); /* You can change this to your preferred background color */
+  display: flex; /* Add this to use Flexbox for aligning items */
+  align-items: center; /* Add this to center-align items vertically */
+}
+
+.message {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrolling 7s linear infinite;
+  color: black;
+}
+
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
