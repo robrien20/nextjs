@@ -112,6 +112,11 @@ const menuConfig = {
         },
       ],
     },
+    {
+      type: "linkButton",
+      label: "Github",
+      url: "https://github.com/robrien20/nextjs",
+    },
   ],
 };
 

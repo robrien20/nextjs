@@ -1,3 +1,4 @@
+// components/Markdown.js
 import Markdown from "../components/Markdown";
 
 function MyPage() {

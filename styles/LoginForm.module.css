@@ -1,3 +1,4 @@
+/* LoginForm.module.css */
 .global {
     box-sizing: border-box;
     margin: 0;
@@ -25,18 +26,13 @@
 }
 
 .loginBtn {
-    font-size: 1.3rem;
-    height: auto;
-    padding: 7.8px 10.4px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    text-align: right;
+    composes: globalButton from '../styles/buttons.css';
+    /* Add this line */
     position: absolute;
     right: 10px;
     top: 10px;
+    text-align: left;
 }
-
 .loginBtn:hover {
     background-color: #0000ff;
     color: #fff;

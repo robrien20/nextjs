@@ -1,15 +1,25 @@
+@supports(padding:max(0px)) {
+
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
 :root{
       box-sizing: border-box;
         margin: 0;
         padding: 0;
         font-family: arial;
-        /* -webkit-user-select: none;
+        -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
         -webkit-user-drag: none;
         -webkit-app-region: no-drag;
-        cursor: default; */
+        cursor: default;
 }
 
 button{ 
