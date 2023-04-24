@@ -1,4 +1,3 @@
-// /components/Markdown.js
 import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import PropTypes from "prop-types";
@@ -7,24 +6,48 @@ import styles from "/styles/Markdown.module.css";
 
 const headerLevels = [1, 2, 3, 4, 5, 6];
 
-const Header = ({ level, children }) => (
-  <React.Fragment>
-    {React.createElement(`h${level}`, { className: styles.header }, children)}
-  </React.Fragment>
-);
+const Header = ({ level, children }) => {
+  const headerText = React.Children.toArray(children).reduce(
+    (text, child) => text + (typeof child === "string" ? child : ""),
+    ""
+  );
+
+  const id = headerText
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, "")
+    .split(" ")
+    .join("-");
+
+  return React.createElement(
+    `h${level}`,
+    { className: styles.header, id: id },
+    children
+  );
+};
 
 const Markdown = ({ content }) => {
   const [visibleHeaders, setVisibleHeaders] = useState([]);
   const observer = useRef();
 
   const intersectionCallback = (entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting);
-    setVisibleHeaders(visible.map((entry) => entry.target.id));
+    const headersStack = visibleHeaders.slice();
+    entries.forEach((entry) => {
+      const level = parseInt(entry.target.tagName.slice(1), 10);
+      const id = entry.target.id;
+      if (entry.isIntersecting) {
+        headersStack[level - 1] = id;
+      } else {
+        headersStack[level - 1] = null;
+      }
+    });
+
+    const newVisibleHeaders = headersStack.filter((header) => header !== null);
+    setVisibleHeaders(newVisibleHeaders);
   };
 
   useEffect(() => {
     observer.current = new IntersectionObserver(intersectionCallback, {
-      rootMargin: "0px 0px -95% 0px",
+      threshold: 0,
     });
 
     headerLevels.forEach((level) => {
@@ -40,10 +63,15 @@ const Markdown = ({ content }) => {
   return (
     <div>
       <div className={styles.stickyContainer}>
-        {visibleHeaders.map((id) => (
-          <h1 key={id} className={styles.header}>
-            {id}
-          </h1>
+        {visibleHeaders.map((id, index) => (
+          <div
+            key={id}
+            className={`${styles.headerWrapper} ${
+              styles[`headerWrapper${index + 1}`]
+            }`}
+          >
+            <h1 className={styles.header}>{id}</h1>
+          </div>
         ))}
       </div>
       <ReactMarkdown
