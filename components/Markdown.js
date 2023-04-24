@@ -78,12 +78,12 @@ const Markdown = ({ content }) => {
         className={styles.markdown}
         remarkPlugins={[gfm]}
         components={{
-          h1: ({ children }) => <Header level={1} children={children} />,
-          h2: ({ children }) => <Header level={2} children={children} />,
-          h3: ({ children }) => <Header level={3} children={children} />,
-          h4: ({ children }) => <Header level={4} children={children} />,
-          h5: ({ children }) => <Header level={5} children={children} />,
-          h6: ({ children }) => <Header level={6} children={children} />,
+          h1: ({ children }) => <Header level={1}>{children}</Header>,
+          h2: ({ children }) => <Header level={2}>{children}</Header>,
+          h3: ({ children }) => <Header level={3}>{children}</Header>,
+          h4: ({ children }) => <Header level={4}>{children}</Header>,
+          h5: ({ children }) => <Header level={5}>{children}</Header>,
+          h6: ({ children }) => <Header level={6}>{children}</Header>,
         }}
       >
         {content}
