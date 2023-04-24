@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1002;
-        overflow: scroll;
+        /* overflow: scroll; */
 }
 
 .loginForm {

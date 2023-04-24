@@ -53,32 +53,32 @@ const menuConfig = {
         },
         {
           type: "subMenuButton",
-          label: "Project 2",
+          label: "Projects 2/3",
           items: [
             {
               type: "linkButton",
-              label: "Subproject 1",
+              label: "Project 2",
               url: "/project-2/subproject-1",
             },
             {
               type: "linkButton",
-              label: "Subproject 2",
+              label: "Project 3",
               url: "/project-2/subproject-2",
             },
           ],
         },
         {
           type: "subMenuButton",
-          label: "Project 2",
+          label: "Projects 3/4",
           items: [
             {
               type: "linkButton",
-              label: "Subproject 3",
+              label: "Project 3",
               url: "/project-2/subproject-1",
             },
             {
               type: "linkButton",
-              label: "Subproject 4",
+              label: "Project 4",
               url: "/project-2/subproject-2",
             },
           ],
@@ -96,16 +96,16 @@ const menuConfig = {
         },
         {
           type: "subMenuButton",
-          label: "Albums_archive",
+          label: "Archive",
           items: [
             {
               type: "linkButton",
-              label: "archivealbum1",
+              label: "archive 1",
               url: "/project-2/subproject-1",
             },
             {
               type: "linkButton",
-              label: "archivealbum1",
+              label: "archive 2",
               url: "/project-2/subproject-2",
             },
           ],
