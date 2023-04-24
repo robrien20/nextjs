@@ -21,7 +21,6 @@
 
 @media (max-width: 768px) {
     .globalButton {
-        font-size: 1.4rem;
         padding: 6px 8px;
         width: 8rem;
     }
