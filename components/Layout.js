@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <BackgroundImage />
-      <ScrollingMessage text="🛠️ ⚠️ 🚧 Website under construction 🚧 ⚠️ 🛠️ Use arrow keys (or swipe on mobile) to change background picture" />
+      <ScrollingMessage text="🛠️ ⚠️ 🚧 Website under construction 🚧 ⚠️ 🛠️ " />
       <Menu />
       <LoginForm />
       <main>{children}</main>
